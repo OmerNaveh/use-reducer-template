@@ -1,10 +1,7 @@
 declare namespace UsersType{
     interface action{
         type:string,
-        payload:{}
+        payload:{name:string, age:number, queryName?:string}
     }
-    interface state{
-
-    }
-    type State = (state,action)=>void;
+    type state = {name:string, age:number}[]
 }
